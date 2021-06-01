@@ -1,0 +1,118 @@
+.search-container{
+  padding: 0 20rpx;
+}
+.search-header{
+  display: flex;
+  height: 60rpx;
+  padding: 10rpx 0;
+  /* align-items: center; */
+}
+.search-input{
+  flex: 1;
+  /* position: relative; */
+  background: rgba(237, 237, 237, 0.6);
+  border-radius: 30rpx;
+  line-height: 60rpx;
+  display: flex;
+  align-items: center;
+}
+.search-input input{
+  height: 60rpx;
+  flex: 1;
+}
+.search-input .iconfont{
+  font-size: 38rpx !important;
+  margin-left: 5rpx;
+  width: 40rpx;
+}
+.clear{
+  margin-right: 20rpx;
+  font-size: 36rpx;
+  z-index: 10;
+  position: relative;
+  display: inline-block;
+  width: 30rpx;
+}
+.cancle{
+  width: 100rpx;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.show-search-list .search-content{
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #d43c33;
+  border-bottom: 1rpx solid #d43c33;
+}
+.search-item{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx ;
+  border-bottom: 1rpx solid #eee;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.search-item .iconfont{
+  font-size: 36rpx;
+  margin-right: 20rpx;
+}
+
+.history{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.history view{
+  padding: 5rpx 35rpx;
+  background: #eee;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  margin-bottom: 20rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+}
+.history .title{
+  background:none;
+  color: #d43c33;
+}
+.delete{
+  color: #d43c33;
+  font-size: 40rpx !important;
+  position: absolute;
+  right: 0;
+  bottom: 20rpx;
+}
+.hot-container .title{
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height:80rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.hot-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.list-item{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  border-bottom: 1px solid #eee;
+}
+.order{
+  margin-right: 20rpx;
+}
+.list-item .name{
+  margin-right: 20rpx;
+}
+.list-item  image{
+  height: 30rpx;
+  width: 30rpx;
+}

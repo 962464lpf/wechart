@@ -1,0 +1,44 @@
+<view class="song-detail-container">
+  <view class="author">{{songDeatil.ar[0].name}}</view>
+  <!-- 小白点 -->
+  <view class="circle"></view>
+  <!-- 杆 -->
+  <image class="needle {{isPlay && 'needle-rotate'}}" src="/static/images/song/needle.png"></image>
+  <!-- 磁盘转动 -->
+  <view class="dis-container {{isPlay && 'discAnimation'}}" bindtap="playSong">
+    <image class="disc" src="/static/images/song/disc.png"></image>
+    <image class="music-img" src="{{songDeatil.al.picUrl}}"></image>
+  </view>
+  <!-- 进度条和控制区域 -->
+  <view class="preogress-control-container">
+    <view class="progress-container">
+      <view class="time">{{currentTimes}}</view>
+      <view class="progress">
+        <view class="point" style="left: {{currentPosition}}rpx"></view>
+        <view class="current-progress" style="width: {{currentPosition}}rpx"></view>
+      </view>
+      <view class="time">{{songsTimes}}</view>
+    </view>
+    <view class="control-container">
+      <view class="control-item">
+        <text class="iconfont icon-iconsMusicyemianbofangmoshiShuffle">
+        </text>
+      </view>
+      <view class="control-item">
+        <text class="iconfont icon-shangyishou" id="pre" bindtap="switchSong">
+        </text>
+      </view>
+      <view class="control-item" bindtap="playSong">
+        <text class="iconfont {{isPlay? 'icon-zanting': 'icon-bofang'}} big">
+        </text>
+      </view>
+      <view class="control-item">
+        <text class="iconfont icon-next" id="next" bindtap="switchSong"></text>
+      </view>
+      <view class="control-item">
+        <text class="iconfont icon-iconsMusicyemianbofangmoshiPlayList">
+        </text>
+      </view>
+    </view>
+  </view>
+</view>

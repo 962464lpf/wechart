@@ -1,0 +1,103 @@
+/* pages/video/video.wxss */
+.video-container{
+  padding: 0 10rpx;
+}
+.search{
+  display: flex;
+  padding: 5rpx;
+}
+.search view{
+  flex: 1;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border: 1px solid #eee;
+  font-size: 26rpx;
+  color: #d43c33;
+  margin: 0 10rpx;
+}
+.search image{
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.nav-video-scroll{
+  display: flex;
+  height: 80rpx;
+  white-space: nowrap;
+  margin-bottom: 8rpx;
+}
+.nav-video-scroll view{
+  font-size: 36rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  box-sizing: border-box;
+  margin-right: 40rpx;
+}
+.active{
+  border-bottom: 2rpx solid #d43c33;
+}
+
+/* 视频区域 */
+.video-scroll{
+  height: calc(100vh - 150rpx);
+}
+.video-item{
+  padding: 0 10rpx;
+  margin-bottom: 10rpx;
+}
+.video-item .video-name{
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 26rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+}
+.video-item image, video{
+  height: 300rpx;
+  width: 100%;
+  border-radius: 20rpx;
+}
+.line{
+  border-top: 1rpx solid #eee;
+}
+.video-commnet{
+  display: flex;
+  justify-content: space-between;
+  height: 50rpx;
+  margin-top: 10rpx;
+}
+.video-commnet .left, .video-commnet .right{
+  display: flex;
+  align-items: center;
+}
+.left text{
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+.video-commnet .left image{
+  height: 50rpx;
+  width: 50rpx;
+  border-radius: 50%;
+}
+.video-commnet .right{
+  
+}
+.right .item{
+  position: relative;
+  margin-right: 60rpx;
+}
+.right .count{
+  position: absolute;
+  top: -13rpx;
+  left: 40rpx;
+}
+.right .btn{
+ padding: 0;
+ display: inline-block;
+ background-color: transparent;
+ border-color: transparent;
+ width: 20rpx;
+}

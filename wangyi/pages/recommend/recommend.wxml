@@ -1,0 +1,26 @@
+<view class="recommned-container">
+  <view class="recommend-header">
+    <image src="/static/images/recommendSong/recommendSong.jpg"></image>
+    <view class="date">
+      <text>{{day}}</text>
+      <text>/</text>
+      <text>{{month}}</text>
+    </view>
+  </view>
+  <view class="recommend-content">
+    <view class="content-header">
+      <view>播放全部</view>
+      <view>多选</view>
+    </view>
+    <scroll-view scroll-y class='recommend-scroll'>
+      <view class="scroll-item" bindtap="toSongDetail">
+        <image src="/static/images/nvsheng.jpg"></image>
+        <view class="musoc-info">
+          <view>冬天的秘密</view>
+          <view>周传雄</view>
+        </view>
+        <text class="iconfont icon-gengduo"></text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

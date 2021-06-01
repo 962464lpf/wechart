@@ -1,0 +1,43 @@
+{
+  "pages": [
+    
+    "pages/login/login",
+    "pages/search/search",
+    "pages/songDetail/songDetail",
+    "pages/index/index",
+    "pages/video/video",
+    "pages/recommend/recommend",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTitleText": "网易云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#d43c33",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "static/images/tabs/home.png",
+        "selectedIconPath": "static/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "static/images/tabs/select.png",
+        "selectedIconPath": "static/images/tabs/selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "static/images/tabs/tab-my.png",
+        "selectedIconPath": "static/images/tabs/tab-my-current.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "navtitle": "/components/navTitle/navtitle"
+  }
+}

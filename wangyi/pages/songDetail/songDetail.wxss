@@ -1,0 +1,127 @@
+.song-detail-container {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.author {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 26rpx;
+  color: white;
+}
+
+.circle {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background: white;
+}
+.needle{
+  position: relative;
+  z-index: 99;
+  top: -25rpx;
+  left: 56rpx;
+  width: 192rpx;
+  height: 274rpx;
+  transform-origin: 40rpx 0;
+  transform: rotate(-20deg);
+  transition: transform 1s;
+}
+.needle-rotate{
+  transform: rotate(0deg);
+}
+.dis-container{
+  display: flex;
+  height: 600rpx;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -150rpx;
+}
+.disc{
+  height: 600rpx;
+  width: 600rpx;
+}
+.music-img{
+  position: absolute;
+  height: 360rpx;
+  width: 360rpx;
+  border-radius: 50%;
+  top: 120rpx;
+}
+.discAnimation{
+  animation: disc 4s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes disc{
+  form{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.preogress-control-container{
+  position: absolute;
+  bottom: 60rpx;
+  left: 0;
+  right: 0;
+}
+.progress-container{
+  display: flex;
+  padding: 0 50rpx;
+  font-size: 28rpx;
+  justify-content: space-between;
+  height: 40rpx;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+.time{
+  width: 100rpx;
+}
+.time:last-child{
+ text-align: end;
+}
+.progress{
+  width: 450rpx;
+  height: 4rpx;
+  background: black;
+  position: relative;
+}
+.point{
+  height: 12rpx;
+  width: 12rpx;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: -5rpx;
+}
+.current-progress{
+  position: absolute;
+  height: 4rpx;
+  background: white;
+  width: 100rpx;
+  left: 0;
+}
+.control-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.control-item{
+  width: 25%;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.iconfont{
+  font-size: 42rpx;
+  color: #eee;
+}
+.big{
+  font-size: 56rpx;
+}

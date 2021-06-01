@@ -1,0 +1,18 @@
+/* components/navTitle/navtitle.wxss */
+.nav-title{
+  padding: 10rpx;
+}
+.nav-title .title{
+  font-size: 24rpx;
+}
+.nav-title .info{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rpx;
+}
+.nav-title .info text:last-child{
+  font-size: 22rpx;
+  border: 1px solid #333;
+  border-radius: 15rpx;
+  padding: 3rpx 10rpx;
+}
